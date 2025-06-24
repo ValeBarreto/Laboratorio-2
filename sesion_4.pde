@@ -1,5 +1,5 @@
 //INICIALIZAR VARIABLES
-int numBubbles = 20;
+int numBubbles = 50;
 
 // corchetes indican que es un array y no una variable
 float[] xPositions;
@@ -13,7 +13,7 @@ int [] yDirections;
 
 void setup() {
   size (1000, 1000);
-  background (0);
+  background (231, 227, 221);
   noStroke();
 
   //DEFINIMOS TAMAÑO DEL ARRAY
@@ -30,8 +30,8 @@ void setup() {
   for (int i = 0; i < xPositions.length; i++ ) {
     xPositions[i] = random(width);
     yPositions[i] = random(width);
-    xSpeeds[i] = random(5);
-    ySpeeds[i] = random(5);
+    xSpeeds[i] = random(2);
+    ySpeeds[i] = random(3);
     xDirections[i] = (random(1) > 0.5) ? 1 : -1 ;
     yDirections[i] = (random(1) > 0.5) ? 1 : -1 ;
   }
@@ -39,7 +39,7 @@ void setup() {
 
 //VOID DRAW ES UN LOOP ETERNO
 void draw() {
-  background(0) ;
+  background(231, 227, 221) ;
   for (int i = 0; i < numBubbles; i++ ) {
 
     //ACTUALIZAR POSICON DE BURBUJAS
@@ -54,8 +54,9 @@ void draw() {
     if (yPositions[i] > height || yPositions[i] < 0) {
       yDirections[i] = yDirections[i] * -1 ;
     }
-    fill (random (50), 
-    ellipse (xPositions[i], yPositions[i], 50, 50);
+    fill (random (201), 54, 49, 600) ;
+    square (xPositions[i], yPositions[i], 50);
+ 
   }
 }
 
