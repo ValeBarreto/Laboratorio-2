@@ -6,12 +6,13 @@ void setup () {
   caperucita. loadPixels ();
   lobo= loadImage("lobo.JPG");
   lobo.loadPixels();
-  final = loadImage ("C3.PNG");
-  final. loadPixels ();
+  finalLobo = loadImage ("C3.PNG");
+  finalLobo. loadPixels ();
 }
 
 void draw () {
   image (caperucita, 0, 0);
   image(lobo,0,0);
+  image (finalLobo, 0, 0);
 
 }
