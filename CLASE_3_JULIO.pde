@@ -1,5 +1,7 @@
 PImage caperucita;
 PImage lobo;
+PImage finalLobo;
+
 void setup () {
   size (1000, 1000);
   caperucita = loadImage("foto 1 caperucita roja.png");
