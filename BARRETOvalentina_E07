@@ -67,7 +67,7 @@ void draw() {
   popMatrix();
 
   if (puntoActivo != -1) {
-    fill(255);
+    fill(13, 39, 61);
     textAlign(LEFT);
     text("Country: " + countryNames[puntoActivo], 20, 30);
     text("Year: " + nf(year[puntoActivo], 0, 0), 20, 50);
